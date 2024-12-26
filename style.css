@@ -219,7 +219,9 @@ color: var(--main-color);
 }
 
 
-
+.products-heading{
+    margin-top: 100px;
+}
 
 .products .box-container{
     display: grid;
@@ -234,17 +236,19 @@ color: var(--main-color);
     padding: 2rem;
 }
 
-.products .box-container .box .icons a{
+.products .box-container .box .icons button{
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
     border: var(--border);
     color: #fff;
+    background: black;
     margin: .3rem;
+    cursor: pointer;
 }
 
-.products .box-container .box .icons a:hover{
+.products .box-container .box .icons button:hover{
     background: var(--main-color);
 }
 
@@ -317,6 +321,10 @@ color: var(--main-color);
 .review .box-container .box .stars i{
     font-size: 1.5rem;
     color: var(--main-color);
+}
+
+.contact-heading{
+    margin-top: 100px;
 }
 
 .contact .row{
@@ -501,6 +509,10 @@ color: var(--main-color);
         font-size: 50%;
     }
     
+}
+
+.aboutus{
+    margin-top: 100px;
 }
 
 .about .row{

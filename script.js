@@ -42,9 +42,9 @@ fetch('https://customized-gifts-and-handicrafts-server.vercel.app/products')
         box.classList.add('box');
       box.innerHTML = `
       <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart"></button>
+                <button class="fas fa-heart"></button>
+                <button class="fas fa-eye"></button>
             </div>
             <div class="image">
                 <img src="${product.image}" alt="${product.name}">
