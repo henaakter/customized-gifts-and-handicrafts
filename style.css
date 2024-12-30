@@ -544,8 +544,6 @@ color: var(--main-color);
     line-height: 1.8;
 }
 
-
-
 @media (min-width: 768px) {
     .box-container {
       grid-template-columns: repeat(2, 1fr);

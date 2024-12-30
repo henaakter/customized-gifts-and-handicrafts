@@ -11,9 +11,8 @@
      <!-- Custome Css file link-->
       <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    
 
+<body>
 
 <!--header section starts-->
 <header class="header">
@@ -29,10 +28,7 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<div class="icons">
-    <div class="fas fa-search" id="search-btn"></div>
-    <div class="fas fa-shopping-cart" id="cart-btn"></div>
-    <div class="fas fa-bars" id="menu-btn"></div>
+<div class="icons" id="icons">
 </div>
 <div class="search-form">
 <input type="search" id="search-box" placeholder="search here...">
@@ -450,7 +446,37 @@
 
 
     <!--Coustom Js File link-->
-    <script src="./script.js"></script>
+    <script src="./script.js">
+
+
+    </script>
+    <script>
+        const user = false; // Set to true if the user is logged in
+    
+        const buttonContainer = document.getElementById('icons');
+        const box = document.createElement('div');
+        if (!user) {
+            box.innerHTML = `
+                <a href="login.html">
+                    <button class="btn">
+                        Login
+                    </button>
+                </a>
+                <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+            `;
+            buttonContainer.appendChild(box);
+        }
+        else{
+            box.innerHTML = `
+                <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+            `;
+            buttonContainer.appendChild(box);
+        }
+    </script>
 </body>
 </html>
 
